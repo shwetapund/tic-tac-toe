@@ -10,6 +10,10 @@
     width: 100px;
     border: 1px solid grey;
     background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
 }
 .box:hover{
     border: 1px solid #ffb3ff;
@@ -19,6 +23,19 @@
     z-index: 100;
 }
 .board-container{
-    background-color:  #ff66ff;
-    width: ;
+    background-color:#ff66ff;
+    width: fit-content;
+    padding: 20px;
+    display: block;
+    margin: 20px auto;
+}
+.player-container{
+    display: flex;
+    justify-content: space-around;
+}
+.player-title{
+    font-size: 20px;
+}
+.current-player{
+    font-size: 20px;
 }
