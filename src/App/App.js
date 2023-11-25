@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import './App.css';
+import Confetti from 'react-confetti'
 
 function App(){
     const [player, setPlayer] = useState(1);
@@ -15,6 +16,7 @@ function App(){
         9: "",
     })
     const [winner, setWinner] = useState(null);
+    const [celebration, setCelebration] = useState(false);
 
     const checkWinner = ()=>{
         console.log(player);
@@ -86,8 +88,9 @@ function App(){
 
     return (
         <div>
+    
             {/* <h1>🐹Tic Tac Toe🦊</h1> */}
-            <h1 className="text-center"> Tic Tac Toe </h1>
+            <h1 className="text-center game-title">✨ Tic Tac Toe✨</h1>
 
             <div className="player-container">
                 <span className="player-title">
