@@ -66,6 +66,20 @@ function App(){
       
     }
 
+    const reset = ()=>{
+        setPlayer(1);
+        setBoard({
+            1: "",
+            2: "",
+            3: "",
+            4: "",
+            5: "",
+            6: "",
+            7: "",
+            8: "",
+            9: "",
+        })
+    }
     useEffect(()=>{
         checkWinner(player);
     },[board])
@@ -79,19 +93,22 @@ function App(){
                 <span className="player-title">
                     Player 1: 🐒
                 </span>
+
+                
+            <span className="text-center current-player">
+                Current Player: {player === 1 ? "🐱" : "🐒"}
+            </span>
+
                 <span className="player-title">
                     Player 2: 🐱
                 </span>
             </div>
 
-            <p className="text-center current-player">
-                Current Player: {player === 1 ? "🐱" : "🐒"}
-            </p>
 
             {
                 winner ?
                 (
-                    <h1>Winner is {player === 1 ? "🐱" : "🐒"}</h1>
+                    <h1 className="text-center">Winner is {winner === 1 ? "🐱" : "🐒"}</h1>
                 ) : null
             }
 
@@ -131,7 +148,11 @@ function App(){
                 </div>
             </div>
 
-            <div></div>
+            <button
+            type="button"
+            className="reset-button"
+            onClick={reset}
+            >Reset</button>
         </div>
     )
 }

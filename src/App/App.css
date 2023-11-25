@@ -39,3 +39,13 @@
 .current-player{
     font-size: 20px;
 }
+.reset-button{
+    background-color:#ff66ff ;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 100px;
+    display: block;
+    margin: 20px auto;
+}
