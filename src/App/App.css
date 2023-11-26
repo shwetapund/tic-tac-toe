@@ -35,10 +35,10 @@
 }
 .player-title{
     font-size: 30px;
-    padding: 10px 10px;
+    /* padding: 10px 10px;
     box-shadow: 0px 0px 5px 1px #f8b0f8;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 10px; */
 }
 .current-player{
     font-size: 25px;
@@ -60,12 +60,10 @@
 @media screen and (max-width:768px){
     .player-title{
         font-size:20px;
-        padding-top:5px;
-        padding-bottom: 5px;
-        padding-left: 5px;
-        padding-right: 5px;
+        /* padding:1px 10px;
+      
         box-shadow: 0px 0px 5px 1px #f8b0f8;
-        background-color: #fff;
+        background-color: #fff; */
     }
     .current-player{
         font-size: 15px;
