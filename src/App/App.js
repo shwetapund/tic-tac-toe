@@ -16,6 +16,7 @@ function App(){
         9: "",
     })
     const [winner, setWinner] = useState(null);
+    // const { width, height } = useWindowSize();
     const [celebration, setCelebration] = useState(false);
 
     const checkWinner = ()=>{
@@ -81,12 +82,19 @@ function App(){
             8: "",
             9: "",
         })
+        setWinner(null);
     }
     useEffect(()=>{
         checkWinner(player);
     },[board])
 
-    return (
+    return (<>
+      <div>
+        {
+            winner !== null ? <Confetti /> : ""
+        }
+      
+      </div>
         <div>
     
             {/* <h1>🐹Tic Tac Toe🦊</h1> */}
@@ -157,6 +165,7 @@ function App(){
             onClick={reset}
             >Reset</button>
         </div>
+        </>
     )
 }
 
