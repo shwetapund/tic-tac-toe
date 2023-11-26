@@ -98,16 +98,15 @@ function App(){
         <div>
     
             {/* <h1>🐹Tic Tac Toe🦊</h1> */}
-            <h1 className="text-center game-title">✨ Tic Tac Toe✨</h1>
+            <h1 className="text-center game-title">✨ Tic Tac Toe ✨</h1>
 
             <div className="player-container">
                 <span className="player-title">
                     Player 1: 🐒
                 </span>
 
-                
             <span className="text-center current-player">
-                Current Player: {player === 1 ? "🐱" : "🐒"}
+                Current Player: {player ===1?"🐱":"🐒"}
             </span>
 
                 <span className="player-title">
