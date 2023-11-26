@@ -101,17 +101,17 @@ function App(){
             <h1 className="text-center game-title">✨ Tic Tac Toe ✨</h1>
 
             <div className="player-container">
-                <span className="player-title">
+                <p className="player-title">
                     Player 1: 🐒
-                </span>
+                </p>
 
-            <span className="text-center current-player">
+            <p className="text-center current-player">
                 Current Player: {player ===1?"🐱":"🐒"}
-            </span>
+            </p>
 
-                <span className="player-title">
+                <p className="player-title">
                     Player 2: 🐱
-                </span>
+                </p>
             </div>
 
 
